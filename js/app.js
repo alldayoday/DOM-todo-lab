@@ -2,6 +2,8 @@
 
 const newLi = document.createElement('li')
 const btn = document.querySelector('button') 
+const list = document.querySelector("todo-list")
+const rest = document.getElementById('rest')
 
 
 
@@ -15,8 +17,7 @@ btn.addEventListener('click', function(event) {
   }
 });
 
-// const rest = document.getElementById('rest')
-
-// rest.addEventListener('click', function(lis){
-//   document.getElementById('todo-list').innerHTML = ''
-// });
+rest.addEventListener('click', init)
+function init (){
+  document.getElementById('todo-list').innerHTML = ''
+}
